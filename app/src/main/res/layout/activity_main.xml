@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".MainActivity">
+<android.support.design.widget.FloatingActionButton
+    android:layout_width="wrap_content"
+    android:id="@+id/fab"
+    android:layout_height="wrap_content"
+    app:fabSize="normal"
+    android:src="@drawable/ic_brightness_low_black_24dp"
+    app:layout_anchor="@id/bottom_bar"
+    />
+    <android.support.design.button.MaterialButton
+        android:id="@+id/buttonRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:text="Register"
+        android:layout_gravity="right"
+        app:backgroundTint="@color/colorPrimary"
+        app:cornerRadius="10dp"
+        app:icon="@drawable/ic_add_black_24dp"
+        app:iconTint="#a4c639"
+        app:rippleColor="@color/colorAccent" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="300dp"
+        app:cardCornerRadius="7dp"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="3dp"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="top|center"
+        android:layout_height="350dp" >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+           <RelativeLayout
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <View
+                   android:layout_alignParentStart="true"
+                   android:layout_width="8dp"
+                   android:background="#2fa881"
+                   android:layout_height="match_parent"
+                   android:layout_marginBottom="280dp"/>
+               <TextView
+                   android:layout_marginLeft="20dp"
+                   android:text="LOGIN"
+                   android:textStyle="bold"
+                   android:textSize="18dp"
+                   android:textColor="#9ACD32"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:text="Username"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="40dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <EditText
+                   android:layout_marginRight="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginTop="57dp"
+                   android:backgroundTint="@color/colorPrimary"
+                   />
+
+               <TextView
+                   android:text="Password"
+                   android:layout_marginLeft="20dp"
+                   android:layout_marginTop="110dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <EditText
+                   android:layout_marginRight="20dp"
+                   android:layout_marginLeft="20dp"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginTop="127dp"
+                   android:backgroundTint="@color/colorPrimary"
+                   />
+
+               <android.support.design.card.MaterialCardView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_centerHorizontal="true"
+                   android:layout_gravity="center_horizontal"
+                   android:layout_marginBottom="95dp"
+                   app:strokeColor="@color/colorPrimaryDark"
+                   app:strokeWidth="2dp">
+
+                   <Button
+                       android:id="@+id/button"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:background="#FFFFFF"
+                       android:text="Sign In" />
+
+
+               </android.support.design.card.MaterialCardView>
+
+               <TextView
+                   android:layout_width="wrap_content"
+                   android:layout_marginLeft="20dp"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_marginBottom="23dp"
+                   android:text="Trouble Signing In?" />
+
+               <android.support.design.button.MaterialButton
+                   android:id="@+id/buttonHelp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_alignParentBottom="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_gravity="end|bottom"
+                   android:layout_marginBottom="16dp"
+                   android:layout_marginRight="10dp"
+                   android:text="Help"
+                   app:backgroundTint="@color/colorPrimary"
+                   app:cornerRadius="10dp"
+                   app:icon="@drawable/ic_help_black_24dp"
+                   app:iconTint="#a4c639"
+                   app:rippleColor="@color/colorAccent" />
+
+           </RelativeLayout>
+
+</LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.bottomappbar.BottomAppBar
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabAttached="true"
+        app:fabAlignmentMode="end"
+        android:layout_height="@dimen/mtrl_bottomappbar_height" />
+
+</android.support.design.widget.CoordinatorLayout>
